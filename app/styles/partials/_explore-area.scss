@@ -1,0 +1,79 @@
+#explore-area {
+	background-color: #fff;
+	padding: 0 $side-gutter;
+	padding-bottom: 85px;
+	
+	.explore-nav {
+		@include  img-retina($base-path+"images/divider@1x.png",$base-path+"images/divider@2x.png", 1px, 35px);
+		background-repeat: no-repeat;
+		background-position: right 30px center;
+		margin-bottom: 60px;
+		width: 10%;
+		min-width: 100px;
+
+		p {
+			padding: 10px 0;
+		}
+	}
+
+	.explore-container {
+		background-color: #000;
+		width: 33%;
+		max-width: 318px;
+		margin-left:3px;
+		height: auto;
+		max-height: 428px;
+		float: left;
+		position: relative;
+		cursor: pointer;
+
+		.image {
+			height: auto;
+			width: 100%;
+		}
+
+		.caption {
+			background-color: #000;
+			width: 100%;
+			height: 149px;
+			padding-top: 40px;
+			max-height: 149px;
+
+			.info-text{ //Warning inception level 4 reached :)
+
+			}
+
+			.description{
+
+			}	
+		}
+	}
+	//Overwrite padding based on the screen size
+	@include paddingScreen();
+
+	@media (max-width: $screen-lg-min) {
+		padding-bottom: 10%;
+
+		.explore-container {
+			width: 32%;
+		}
+	}
+
+
+    @media (max-width: $screen-phone) {
+    	.explore-nav {
+			margin-bottom: 10%;
+		}
+
+    	.explore-container {
+			width: 100%;
+			margin: 5px auto;
+			float: none;
+
+			.caption {
+				height: auto;
+				padding: 10% 0;
+			}
+		}
+    }
+}

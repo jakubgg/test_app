@@ -1,0 +1,13 @@
+@mixin paddingScreen() {
+	@media (max-width: $screen-lg-min) {
+        padding:0 ($side-gutter * 0.66) ;
+	}
+
+    @media (max-width: $screen-md-min) {
+        padding:0 ($side-gutter * 0.33) ;
+    }
+
+    @media (max-width: $screen-phone) {
+        padding:0 15px;
+    }
+}

@@ -1,0 +1,54 @@
+//== General
+//
+$base-path: "../";
+
+//== Typography
+//
+$font-default: "DIN";
+
+$font-family-sans-serif:  $font-default, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-default:     $font-family-sans-serif;
+
+$font-size-base:          15px;
+$font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
+
+$font-size-h1:            floor(($font-size-base * 3)); // ~45px
+$font-size-h2:            floor(($font-size-base * 2.15)); // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.7)); // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.25)); // ~18px
+$font-size-h5:            $font-size-base;
+$font-size-h6:            ceil(($font-size-base * 0.85)); // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.2;
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:    floor(($font-size-base * $line-height-base)); // ~20px
+
+//== Colours
+//
+$text-colour-base: #9a9a9a;
+$text-colour-alt: #ffffff;
+$text-colour-alt2: #828282;
+$text-colour-alt3: #5c5c5c;
+$text-colour-alt4: #272727;
+$text-colour-alt5: #343434;
+$text-colour-link-active: $text-colour-alt;
+$text-colour-link-inactive: $text-colour-base;
+
+$body-bg: #000;
+$content-colour: #fff;
+$footer-colour: #151515;
+
+$body-bg-width: 1200px;
+$body-bg-height: 795px;
+$logo-img-width: 221px;
+$logo-img-height: 30px;
+
+// Basics of a navbar
+$navbar-height:             130px;
+$navbar-bg:            		transparent;
+
+//==Layout
+//
+$side-gutter: 120px;

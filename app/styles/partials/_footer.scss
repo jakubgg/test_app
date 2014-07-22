@@ -1,0 +1,20 @@
+.footer {
+	background-color: #000;
+	height: auto;
+	padding: 20px $side-gutter;
+
+	p {
+		padding-left: 0;
+		padding-right: 0;
+
+		a {
+			margin-right: 20px;
+			@include transition(color 0.5s);
+			&:hover,
+			&:focus {
+				text-decoration: none;
+				color: $text-colour-alt;
+			}
+		}
+	}
+}

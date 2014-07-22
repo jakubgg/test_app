@@ -1,0 +1,8 @@
+$icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// overrides
+@import "modules/mixins";
+// bower:scss
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
+// endbower
+@import "partials/layout";
+

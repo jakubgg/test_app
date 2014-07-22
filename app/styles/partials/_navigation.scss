@@ -1,0 +1,65 @@
+
+.navbar-default {
+    background-color: $navbar-bg;
+    border: none;
+    padding: 0 $side-gutter;
+
+    .navbar-nav {
+        > li > a {
+            color: $text-colour-base;
+            padding-right: 0;
+            padding-left:30px;
+
+            &:hover,
+            &:focus {
+                color: $text-colour-alt2;
+                background-color: $navbar-bg;
+            }
+        }
+        > .active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $text-colour-link-active;
+                background-color: $navbar-bg;
+            }
+        }
+    }
+
+    //Overwrite padding based on the screen size
+    @include paddingScreen();
+
+    @media (max-width: $screen-lg-min) {
+        .navbar-nav {
+            > li > a {
+                padding-right: 0;
+                padding-left:15px;
+            }
+        }
+    }
+
+    @media (max-width: $screen-md-min) {
+        .navbar-nav {
+            > li > a {
+                padding-right: 0;
+                padding-left:10px;
+            }
+        }
+    }
+}
+.navbar-brand {
+	@include text-hide();
+	width: $logo-img-width;
+	height: $logo-img-height;
+     @include img-retina($base-path+"images/spyker-logo@1x.png",$base-path+"images/spyker-logo@2x.png",$logo-img-width, $logo-img-height);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: ($navbar-height/2) 0;
+
+    @media (max-width: $screen-md-min) {
+        width: ($logo-img-width * 0.66);
+        height: ($logo-img-height  * 0.66);
+        @include img-retina($base-path+"images/spyker-logo@1x.png",$base-path+"images/spyker-logo@2x.png", $logo-img-width * 0.66, $logo-img-height  * 0.66);
+    }
+}

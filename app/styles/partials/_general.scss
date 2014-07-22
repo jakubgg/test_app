@@ -1,0 +1,37 @@
+body{
+	background-color: $body-bg;
+	@include  img-retina($base-path+"images/body-bg@1x.jpg",$base-path+"images/body-bg@2x.jpg",$body-bg-width, $body-bg-height);
+	background-repeat: no-repeat;
+	background-position: top center;
+
+    @media (max-width: $screen-phone) {
+    	background-size: contain; 
+    }
+}
+
+.container {
+	padding: 0;
+}
+
+.mail-link {
+	@include  img-retina($base-path+"images/divider@1x.png",$base-path+"images/divider@2x.png", 1px, 35px);
+	background-repeat: no-repeat;
+	background-position: right 45px center;	
+	border-radius: 4px;
+	border: 1px #999999 solid;
+	padding: 12px 14px 12px 20px;
+	display: block;
+	@include transition(color 0.5s);
+	margin-top: 20px;
+	width: 270px;
+
+	&:hover,
+  	&:focus {
+        color: $text-colour-alt2;
+      }
+}
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}

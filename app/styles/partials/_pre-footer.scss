@@ -1,0 +1,49 @@
+#pre-footer {
+	background-color: #151515;
+	height: 197px;
+	padding: 55px $side-gutter;
+
+	.mail-link {
+		@include transition(color 0.5s);
+		&:hover,
+  		&:focus {
+        	color: $text-colour-alt;
+      	}
+	}
+
+	div {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.footer-contact {
+		float: right;
+	}
+	//Overwrite padding based on the screen size
+	@include paddingScreen();	
+
+	@media (max-width: $screen-lg-min) {
+		height: auto;
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+
+	@media (max-width: $screen-sm-min - 1) {
+		div {
+			text-align: center;
+			margin:2% 0;
+
+			img {
+				margin:0 auto;
+			}
+		}
+
+		.footer-contact {
+			float: none;
+		}
+
+		.mail-link {
+			margin: 0 auto;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "name": "worktest",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass-official": "~3.x.x",
+    "modernizr": "~2.6.2",
+    "jquery": "~1.11.0",
+    "greensock": "~1.12.1"
+  },
+  "devDependencies": {}
+}

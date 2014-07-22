@@ -1,0 +1,25 @@
+#main-area {
+	height: 635px;
+	padding: 0 $side-gutter;
+
+	p {
+		margin-top: 28%;
+	}
+
+    //Overwrite padding based on the screen size
+    @include paddingScreen();
+
+	@media (max-width: $screen-lg-min) {
+        height: auto;
+       
+        .mail-link {
+			margin-bottom: 20px;
+		}
+    }
+
+    @media (max-width: $screen-phone) {
+        p {
+			margin-top: 10%;
+		}
+    }
+}
